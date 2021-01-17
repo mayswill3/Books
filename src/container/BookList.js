@@ -17,7 +17,7 @@ function BookList() {
   const [data, setData] = useState({ books: [] });
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(initialPageNumber);
-  const [booksPerPage, setBooksPerPage] = useState(4);
+  const [booksPerPage] = useState(4);
 
   useEffect(() => {
     const fetchBooks = async () => {
